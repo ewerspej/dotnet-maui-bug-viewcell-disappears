@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BugRepro_ViewCellDisappearsInTableView.MainPage">
+
+  <TableView>
+    <TableRoot>
+      <TableSection
+        Title="One">
+        <SwitchCell Text="Some Switch" />
+      </TableSection>
+      <TableSection
+        Title="Two">
+        <ViewCell>
+          <Grid
+            HeightRequest="40"
+            ColumnDefinitions="0.5*,0.5*">
+            <Label
+              Grid.Column="0"
+              Text="This ViewCell disappears" />
+            <Button
+              Grid.Column="1"
+              Text="Press Me" />
+          </Grid>
+        </ViewCell>
+        <SwitchCell Text="Another Switch" />
+      </TableSection>
+    </TableRoot>
+  </TableView>
+
+</ContentPage>
