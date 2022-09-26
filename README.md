@@ -1,5 +1,5 @@
 # dotnet-maui-bug-viewcell-disappears
-Bug Reproduction Repo
+Bug Reproduction Repo for .NET MAUI Issue: https://github.com/dotnet/maui/issues/10322
 
 Platforms: Android 12.0
 
